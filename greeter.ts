@@ -11,9 +11,11 @@ interface Person {
 }
 
 export function greeter(person : Person) {
+    debugger;
     return "Hello, " + person.firstName + " " + person.lastName;
 }
 
 let user = new Student("Jane", "M.", "User");
-
+console.log(greeter(user));
 document.body.innerHTML = greeter(user);
+

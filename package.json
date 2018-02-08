@@ -1,8 +1,18 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "debug": "node --inspect-brk ./node_modules/jest/bin/jest -i"
   },
   "devDependencies": {
-    "ts-jest": "^22.0.3"
+    "@types/jest": "^22.1.1",
+    "ts-jest": "^22.0.3",
+    "typescript": "^2.7.1"
+  },
+  "jest": {
+    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "C:\\Users\\RawanS\\Desktop\\Stuff\\TypeScriptPractice.git\\node_modules\\ts-jest\\preprocessor.js"
+    },
+    "testMatch": ["**/*.(spec.ts|test.js)"]
   }
 }

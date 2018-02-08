@@ -15,4 +15,6 @@ function greeter(person) {
 }
 exports.greeter = greeter;
 var user = new Student("Jane", "M.", "User");
-document.body.innerHTML = greeter(user);
+console.log(greeter(user));
+//document.body.innerHTML = greeter(user);
+//# sourceMappingURL=greeter.js.map
